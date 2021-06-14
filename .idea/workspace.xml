@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="127ec5c6-30c3-4595-b88a-f9433b40504a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="D:\go13\go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1sZ52F579sXOE3FepVYUN2Ik2kL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build SMTest (1)">
+    <configuration name="go build SMTest (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="SMTest" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="SMTest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build SMTest" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="SMTest" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="E:\GoWork\src\SMTest" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build SMTest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="SMTest" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/SMTest.go" />
+      <package value="SMTest" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build SMTest" />
+      <item itemvalue="Go Build.go build SMTest.go" />
+      <item itemvalue="Go Build.go build SMTest (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build SMTest (1)" />
+        <item itemvalue="Go Build.go build SMTest.go" />
+        <item itemvalue="Go Build.go build SMTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>https://goproxy.io,direct</proxy>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623660791841">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="479" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1623660791841" />
+    <state x="744" y="198" key="#go_build_SMTest.go" timestamp="1623660799543">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="744" y="198" key="#go_build_SMTest.go/0.0.2048.1112@0.0.2048.1112" timestamp="1623660799543" />
+    <state width="740" height="466" key="DebuggerActiveHint" timestamp="1623673648310">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="740" height="466" key="DebuggerActiveHint/0.0.2048.1112@0.0.2048.1112" timestamp="1623673648310" />
+    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1623660712644">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1623660712644" />
+    <state width="2005" height="306" key="GridCell.Tab.0.bottom" timestamp="1623679148821">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="306" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1623679148821" />
+    <state width="2005" height="306" key="GridCell.Tab.0.center" timestamp="1623679148821">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="306" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1623679148821" />
+    <state width="2005" height="306" key="GridCell.Tab.0.left" timestamp="1623679148821">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="306" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1623679148821" />
+    <state width="2005" height="306" key="GridCell.Tab.0.right" timestamp="1623679148821">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="306" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1623679148821" />
+    <state width="2005" height="306" key="GridCell.Tab.1.bottom" timestamp="1623679148821">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="306" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1623679148821" />
+    <state width="2005" height="306" key="GridCell.Tab.1.center" timestamp="1623679148821">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="306" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1623679148821" />
+    <state width="2005" height="306" key="GridCell.Tab.1.left" timestamp="1623679148821">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="306" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1623679148821" />
+    <state width="2005" height="306" key="GridCell.Tab.1.right" timestamp="1623679148821">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="306" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1623679148821" />
+    <state x="526" y="201" key="SettingsEditor" timestamp="1623660521843">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="526" y="201" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1623660521843" />
+    <state x="808" y="486" key="com.goide.codeInsight.imports.GoImportConfigurable$AddImportExclusionDialog" timestamp="1621156600475">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="808" y="486" key="com.goide.codeInsight.imports.GoImportConfigurable$AddImportExclusionDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1621156600475" />
+    <state x="570" y="292" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1623674780479">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="570" y="292" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2048.1112@0.0.2048.1112" timestamp="1623674780479" />
+    <state x="1215" y="196" width="642" height="801" key="find.popup" timestamp="1622991410256">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="1215" y="196" width="642" height="801" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1622991410256" />
+  </component>
+</project>
