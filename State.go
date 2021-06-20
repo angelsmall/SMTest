@@ -17,11 +17,16 @@ type State struct {
 }
 
 // 创建一个状态对象
-func NewState(name string) *State {
-	if name == "" {
+func NewState(config StateConfig) *State {
+	if config.Name == "" {
 		return nil
 	}
-	return &State{_name: name, _transition: make([]SMInterface.ITransition, 0)}
+	state := &State{_name: config.Name, _transition: make([]SMInterface.ITransition, 0)}
+	state.registerEnterEvent(config.OnEnterCallBack)
+	state.registerExitEvent(config.OnExitCallBack)
+	state.registerUpdateEvent(config.OnUpdateCallBack)
+
+	return &State{_name: config.Name, _transition: make([]SMInterface.ITransition, 0)}
 }
 
 func (this *State) SetName(name string) {
@@ -70,14 +75,14 @@ func (this *State) AddTransition(t SMInterface.ITransition) {
 	this._transition = append(this._transition, t)
 }
 
-func (this *State) OnEnterEvent(callBack func(self *State, pre SMInterface.IState)) {
+func (this *State) registerEnterEvent(callBack func(self *State, pre SMInterface.IState)) {
 	this.onEnterEvent = callBack
 }
 
-func (this *State) OnExitEvent(callBack func(self *State, next SMInterface.IState)) {
+func (this *State) registerExitEvent(callBack func(self *State, next SMInterface.IState)) {
 	this.onExitEvent = callBack
 }
 
-func (this *State) OnUpdateEvent(callBack func(self *State, dt int64)) {
+func (this *State) registerUpdateEvent(callBack func(self *State, dt int64)) {
 	this.onUpdateEvent = callBack
 }

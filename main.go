@@ -7,13 +7,12 @@ package main
 * 在关的状态下，强行进入，就发出警告。
 * 在开的情况下，人一进入，门就关了；
 * 在开的情况下，继续投币，就说：“thank you”。
-*/
+ */
 
 import (
 	"bufio"
 	"fmt"
 	"os"
-	"sync"
 	"time"
 )
 
@@ -54,76 +53,45 @@ func stdin() {
 
 }
 
-
-type PublicParameter struct {
-	isInsertCoin bool
-	isPassPeople bool
-}
-
-var pParamOnce sync.Once
-var pParam *PublicParameter
-
-func PublicParameterManager() *PublicParameter{
-	pParamOnce.Do( func () {
-		pParam = &PublicParameter{}
-	} )
-
-	return pParam
-}
-
-// 得到是否投入硬币
-func (this *PublicParameter) GetIsInsertCoin () bool{
-	return this.isInsertCoin
-}
-
-// 设置是否投入硬币
-func (this *PublicParameter) SetIsInsertCoin (insertCoin bool) {
-	this.isInsertCoin = insertCoin
-}
-
-// 得到是否有人通过
-func (this *PublicParameter) GetIsPassPeople () bool{
-	return this.isPassPeople
-}
-
-// 设置是否有人通过
-func (this *PublicParameter) SetIsPassPeople (passPeople bool) {
-	this.isPassPeople = passPeople
-}
-
-
 // 初始化状态
-func initMachine() *StateMachine{
+func initMachine() *StateMachine {
 	// 门开启
-	openState := NewState("open")
-	openState.OnEnterEvent(openOnEnterEvent)
-	openState.OnExitEvent(openOnExitEvent)
-	openState.OnUpdateEvent(openOnUpdateEvent)
+	openState := NewState(StateConfig{
+		Name:             State_Open,
+		OnEnterCallBack:  openOnEnterEvent,
+		OnExitCallBack:   openOnExitEvent,
+		OnUpdateCallBack: openOnUpdateEvent,
+	})
 
 	// 门关闭
-	closeState := NewState("close")
-	closeState.OnEnterEvent(closeOnEnterEvent)
-	closeState.OnExitEvent(closeOnExitEvent)
-	closeState.OnUpdateEvent(closeOnUpdateEvent)
+	closeState := NewState(StateConfig{
+		Name:             State_Close,
+		OnEnterCallBack:  closeOnEnterEvent,
+		OnExitCallBack:   closeOnExitEvent,
+		OnUpdateCallBack: closeOnUpdateEvent,
+	})
 
-	// 从状态开到关
-	openToCloseTrans := NewTransition(openState, closeState)
-	openToCloseTrans.OnTransitionEvent(openToClose)
-	openToCloseTrans.OnCheckEvent(openToCloseCheck)
-	openState.AddTransition(openToCloseTrans)
+	StatePoolManager().RegisterState(openState)
+	StatePoolManager().RegisterState(closeState)
 
+	StatePoolManager().RegisterTransition(TransConfig{
+		FromName: State_Open,
+		ToName: State_Close,
+		OnTransitionCallback: openToClose,
+		OnCheckCallback: openToCloseCheck,
+	})
 
-	// 从状态关到开
-	closeToOpenTrans := NewTransition(closeState, openState)
-	closeToOpenTrans.OnTransitionEvent(closeToOpen)
-	closeToOpenTrans.OnCheckEvent(closeToOpenCheck)
-	closeState.AddTransition(closeToOpenTrans)
+	StatePoolManager().RegisterTransition(TransConfig{
+		FromName: State_Close,
+		ToName: State_Open,
+		OnTransitionCallback: closeToOpen,
+		OnCheckCallback: closeToOpenCheck,
+	})
 
-	machine := NewStateMachine("subway", closeState)
-	machine.AddState(openState)
-	machine.AddState(closeState)
+	StatePoolManager().RegisterOnlyOneStateMachine(StateMachineConfig{
+		Name: StateMachine_Subway,
+		defaultState: closeState,
+	})
 
-	return machine
+	return StatePoolManager().GetOnlyOneStateMachine()
 }
-
-

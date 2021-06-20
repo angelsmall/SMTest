@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="127ec5c6-30c3-4595-b88a-f9433b40504a" name="Default Changelist" comment="" />
+    <list default="true" id="127ec5c6-30c3-4595-b88a-f9433b40504a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PublicParameter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constant.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SMInterface/Istate.go" beforeDir="false" afterPath="$PROJECT_DIR$/SMInterface/Istate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/State.go" beforeDir="false" afterPath="$PROJECT_DIR$/State.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StateMachine.go" beforeDir="false" afterPath="$PROJECT_DIR$/StateMachine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +23,14 @@
     </option>
   </component>
   <component name="GOROOT" path="D:\go13\go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1sZ52F579sXOE3FepVYUN2Ik2kL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -146,9 +158,13 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="570" y="292" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2048.1112@0.0.2048.1112" timestamp="1623674780479" />
-    <state x="1215" y="196" width="642" height="801" key="find.popup" timestamp="1622991410256">
+    <state x="1215" y="196" width="642" height="801" key="find.popup" timestamp="1624199130539">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="1215" y="196" width="642" height="801" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1622991410256" />
+    <state x="1215" y="196" width="642" height="801" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1624199130539" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1624199083277">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1624199083277" />
   </component>
 </project>
